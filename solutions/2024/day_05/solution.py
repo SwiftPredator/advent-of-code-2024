@@ -41,7 +41,6 @@ class Solution(StrSplitSolution):
         rd = [(int(s.split("|")[0]), int(s.split("|")[1])) for s in rules]
         for p_ord in p_orders:
             numbers = [int(i) for i in p_ord.split(",")]
-            t_numbers = [int(i) for i in p_ord.split(",")]
             skip = False
             is_wrong_order = False
             while not skip:
@@ -61,7 +60,7 @@ class Solution(StrSplitSolution):
                         j = i + 1
                     else:
                         j += 1
-                        
+
                 if tskip:
                     skip = True
 
